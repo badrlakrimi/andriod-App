@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp"
+        android:background="@drawable/layaout_border_profile">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/profile"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#F5F5F5"/>
+
+
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:fontFamily="sans-serif"
+            android:textColor="#050505"
+            android:textSize="12dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/language_l"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp"
+        android:background="@drawable/layaout_border_profile">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_langue" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Language options"
+            android:fontFamily="sans-serif"
+            android:textColor="#050505"
+            android:textSize="11dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="normal" />
+
+
+
+        <TextView
+            android:id="@+id/lbl_language"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:textColor="#050505"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/healthData_l"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp"
+        android:background="@drawable/layaout_border_profile">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_health" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health data"
+            android:fontFamily="sans-serif"
+            android:textColor="#050505"
+            android:textSize="11dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="normal" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/layaout_border_profile"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_notification" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Notification"
+            android:textColor="#050505"
+            android:textSize="11dp"
+            android:textStyle="normal" />
+
+
+        <Switch
+            android:id="@+id/switch_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/referFriend_l"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp"
+        android:background="@drawable/layaout_border_profile">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_share" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refer a Friend"
+            android:fontFamily="sans-serif"
+            android:textColor="#050505"
+            android:textSize="11dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="normal" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/feedBack_l"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp"
+        android:background="@drawable/layaout_border_profile">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_feed" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Feed Back"
+            android:textColor="#050505"
+            android:textSize="11dp"
+            android:textStyle="normal" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rating_l"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/layaout_border_profile"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_rate" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Rate Us"
+            android:textColor="#050505"
+            android:textSize="11dp"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/logout_l"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp"
+        android:background="@drawable/layaout_border_profile">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_logout" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:fontFamily="sans-serif"
+            android:textColor="#050505"
+            android:textSize="11dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Map_l"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp"
+        android:background="@drawable/layaout_border_profile">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_langue" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map"
+            android:fontFamily="sans-serif"
+            android:textColor="#050505"
+            android:textSize="11dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="normal" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
